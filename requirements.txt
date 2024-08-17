@@ -3,15 +3,15 @@ Obavezne stranice: Početna, O nama, Usluge/Proizvodi, Kontakt
 1. Primena html 5, css 3, java scripta GOTOVO
 2. Statički veb sajt bez primene frameworka PRIMENJUJE SE
 3. Samostalno kreirana transparentna ikonica – logo, sva multimedija je lokalna (nema url poziva) URADITI
-4. Izvorni kod na GITHUB URADITI
+4. Izvorni kod na GITHUB GOTOVO
 5. Hosting sajta na besplatnom hostingu URADITI
 6. Stranice na srpskom – korisnički interfejs i kod (nazivi identifikatora u kodu) PRIMENJUJE SE
-Veb forma sa HTML i Java Script validacijama URADITI
+Veb forma sa HTML i Java Script validacijama GOTOVO
 Animacija ili tranzicija primenom CSS ili Java Scripta URADITI
 Meniji URADITI
 Slajder za slike na baneru GOTOVO
-Responzivnost - za barem 2 rezolucije – medija upiti URADITI, css flex GOTOVO, fleksibilna tipografija GOTOVO, hamburger meni URADITI
-Vizuelni efekti nad tekstom i slikama (npr. glow, fade)
+Responzivnost - za barem 2 rezolucije – medija upiti GOTOVO, css flex GOTOVO, fleksibilna tipografija GOTOVO, hamburger meni GOTOVO
+Vizuelni efekti nad tekstom i slikama (npr. glow, fade) GOTOVO
 
 OPCIONO:
 
