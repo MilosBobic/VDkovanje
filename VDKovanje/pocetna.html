@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stilovi.css" />
+  </head>
+  <body>
+    <!--Hamburger meni-->
+    <div id="hamburger" onclick="otvoriHamburger()">
+      <div class="linija"></div>
+      <div class="linija"></div>
+      <div class="linija"></div>
+    </div>
+
+    <!--Navigacioni meni-->
+    <div id="otvorenHamburger">
+      <nav>
+        <ul class="navigacioniMeni">
+          <li>
+            <p class="ugasi" onclick="zatvoriHamburger()">×</p>
+          </li>
+          <li>
+            <img class="logo" src="./slike/logo.png" />
+          </li>
+          <li class="navigacioniLink">
+            <p class="navigacioniTekst"><a href="pocetna.html">Početna</a></p>
+          </li>
+          <li class="navigacioniLink">
+            <p class="navigacioniTekst">
+              <a href="proizvodi.html">Proizvodi</a>
+            </p>
+          </li>
+          <li class="navigacioniLink">
+            <p class="navigacioniTekst"><a href="o-nama.html">O nama</a></p>
+          </li>
+          <li class="navigacioniLink">
+            <p class="navigacioniTekst"><a href="kontakt.html">Kontakt</a></p>
+          </li>
+          <li>
+            <img class="tema" src="./slike/tema.png" />
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--Pokretni banner-->
+    <div style="z-index: -1">
+      <div class="banerKontejner">
+        <div class="slajdovi cover">
+          <img src="./slike/bannerSlika1.jpg" class="slajdoviSlika" />
+        </div>
+
+        <div class="slajdovi cover">
+          <img src="./slike/bannerSlika2.jpg" class="slajdoviSlika" />
+        </div>
+
+        <div class="slajdovi cover">
+          <img src="./slike/bannerSlika3.jpg" class="slajdoviSlika" />
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <span class="crticaIndeks" onclick="trenutniSlajd(1)"></span>
+        <span class="crticaIndeks" onclick="trenutniSlajd(2)"></span>
+        <span class="crticaIndeks" onclick="trenutniSlajd(3)"></span>
+      </div>
+    </div>
+    <!--Tekst stranice-->
+    <div class="sekcijaTekst">
+      <h1>Dobrodošli u Kiku - Majstori Kovačkog Zanata</h1>
+      <p class="tekst">
+        Kika je mesto gde tradicija i umetnost kovačkog zanata oživljavaju kroz
+        svaki naš proizvod. Sa generacijama iskustva iza nas, ponosni smo što
+        smo zadržali veštine i strast za izradom ručno kovane opreme koja
+        odoleva vremenu i donosi jedinstvenu lepotu u vaš dom ili radni prostor.
+      </p>
+      <h2>Naša Ponuda</h2>
+      <p class="tekst">U našoj ponudi možete pronaći:</p>
+      <ul>
+        <li>
+          <b class="sjaj">Ručno kovani alat</b> - savršeni za profesionalce i
+          ljubitelje zanata.
+        </li>
+        <li>
+          <b class="sjaj">Ručno kovana oprema</b> - oprema za kampovanje i lov
+        </li>
+      </ul>
+    </div>
+
+    <script src="skripte.js"></script>
+  </body>
+</html>
