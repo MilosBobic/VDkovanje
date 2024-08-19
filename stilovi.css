@@ -70,7 +70,7 @@ a:hover {
   .hamburger {
     display: none;
   }
-
+  
   .navigacioniMeni {
     display: flex;
     flex-direction: row;
@@ -95,6 +95,25 @@ a:hover {
   .navigacioniTekst {
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .opadajuciMeni {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--boja-pozadine-tamna);
+  }
+  
+  .meni:hover .opadajuciMeni {
+    display: block;
+  }
+  
+  .opadajuciMeni a {
+    display: block;
+    padding: 10px;
   }
 
   .logo,
@@ -183,6 +202,10 @@ a:hover {
     margin: 5px auto;
     height: 3px;
     background-color: var(--boja-pozadine-svetla);
+  }
+
+  #informacije{
+    display: none;
   }
 
   .navigacioniMeni {
@@ -296,9 +319,7 @@ h2 {
   color: var(--primarna-boja-teksta-svetla);
 }
 
-.proizvod > h3,p {
-  padding-bottom: 3%;
-}
+
 
 .proizvod > h3 {
   margin-top: 10px;
