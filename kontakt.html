@@ -20,6 +20,7 @@
     <div id="otvorenHamburger">
       <nav>
         <ul class="navigacioniMeni">
+          <h1>KIKA</h1>
           <li>
             <p class="ugasi" onclick="zatvoriHamburger()">×</p>
           </li>
@@ -35,7 +36,7 @@
             </p>
           </li>
           <li class="navigacioniLink">
-            <p class="navigacioniTekst"><a href="o-nama.html">O nama</a></p>
+            <p class="navigacioniTekst"><a href="onama.html">O nama</a></p>
           </li>
           <li class="navigacioniLink">
             <p class="navigacioniTekst"><a href="kontakt.html">Kontakt</a></p>
@@ -48,7 +49,7 @@
     </div>
 
     <!--Pokretni banner-->
-    <div style="z-index: -1">
+    <div>
       <div class="banerKontejner">
         <div class="slajdovi cover">
           <img src="./slike/bannerSlika1.jpg" class="slajdoviSlika" />
@@ -68,6 +69,19 @@
         <span class="crticaIndeks" onclick="trenutniSlajd(2)"></span>
         <span class="crticaIndeks" onclick="trenutniSlajd(3)"></span>
       </div>
+    </div>
+
+    <div class="kontaktForma">
+      <form id="kontaktForma">
+        <h2>Kontaktirajte Nas</h2>
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="poruka">Poruka:</label>
+        <textarea id="poruka" name="poruka" required></textarea>
+        <input type="submit" value="Posalji" />
+      </form>
     </div>
     <script src="skripte.js" async defer></script>
   </body>

@@ -1,8 +1,8 @@
 :root {
   --boja-pozadine-tamna: #333;
-  --boja-pozadine-svetla: #fff;
+  --boja-pozadine-svetla: #eaeaea;
   --primarna-boja-teksta-tamna: #222;
-  --primarna-boja-teksta-svetla: #fff;
+  --primarna-boja-teksta-svetla: #eaeaea;
   --boja-linka: rgb(152, 11, 11);
 }
 
@@ -67,9 +67,6 @@ a:hover {
   background-color: var(--boja-linka);
 }
 
-.sjaj {
-  text-shadow: 0 0 1 px #fff, 0 0 1px #fff, 0 0 6px #fff;
-}
 @media screen and (min-width: 600px) {
   .hamburger {
     display: none;
@@ -79,15 +76,22 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
+    align-items: center;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 1em;
     list-style-type: none;
     background-color: rgba(51, 51, 51, 0.8);
-    color: #fff;
+    color: var(--primarna-boja-teksta-svetla);
     font-size: 1.2em;
+    height: 6%;
+    z-index: 1;
+  }
+
+  .navigacioniMeni > h1 {
+    margin-right: -25%;
   }
 
   .navigacioniTekst {
@@ -97,13 +101,74 @@ a:hover {
 
   .logo,
   .tema {
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo{
+    align-self: left;
   }
 
   .ugasi {
     display: none;
   }
+
+}
+.kontaktForma {
+  margin-top: -5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+}
+
+.kontaktForma form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.kontaktForma label {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.kontaktForma input,
+.kontaktForma textarea {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.kontaktForma input[type="submit"] {
+  background-color: var(--boja-linka);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.kontaktForma input[type="submit"]:hover {
+  background-color: var(--boja-linka);
+}
+
+.kontaktForma textarea {
+  height: 10em;
+}
+
+.kontaktForma h2 {
+  text-shadow: 0 0 3px #fff;
 }
 
 @media screen and (max-width: 600px) {
@@ -119,7 +184,7 @@ a:hover {
     width: 30px;
     margin: 5px auto;
     height: 3px;
-    background-color: white;
+    background-color: var(--boja-pozadine-svetla);
   }
 
   .navigacioniMeni {
@@ -194,4 +259,54 @@ h2 {
 
 .sekcijaTekst > p {
   margin-bottom: 2%;
+}
+
+.sekcijaTekst > p > a {
+  color: var(--boja-linka);
+}
+
+.sekcijaProizvodi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proizvodiContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proizvod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  color: var(--primarna-boja-teksta-svetla);
+}
+
+.proizvodSlika {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.sekcijaProizvodi > h2 {
+  color: var(--primarna-boja-teksta-svetla);
+}
+
+.proizvod > h3,p {
+  padding-bottom: 3%;
+}
+
+.proizvod > h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.proizvod > p {
+  font-weight: bold;
 }
