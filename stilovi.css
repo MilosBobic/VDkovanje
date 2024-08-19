@@ -1,8 +1,8 @@
 :root {
   --boja-pozadine-tamna: #333;
-  --boja-pozadine-svetla: #fff;
+  --boja-pozadine-svetla: #eaeaea;
   --primarna-boja-teksta-tamna: #222;
-  --primarna-boja-teksta-svetla: #fff;
+  --primarna-boja-teksta-svetla: #eaeaea;
   --boja-linka: rgb(152, 11, 11);
 }
 
@@ -281,7 +281,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 200px;
   margin: 20px;
+  text-align: center;
+  color: var(--primarna-boja-teksta-svetla);
 }
 
 .proizvodSlika {
@@ -289,4 +292,21 @@ h2 {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.sekcijaProizvodi > h2 {
+  color: var(--primarna-boja-teksta-svetla);
+}
+
+.proizvod > h3,p {
+  padding-bottom: 3%;
+}
+
+.proizvod > h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.proizvod > p {
+  font-weight: bold;
 }
