@@ -1,7 +1,6 @@
 let brojSlajda = 1;
 prikaziSlajdove(brojSlajda);
 
-// Kontrolna slika za slajdove
 function trenutniSlajd(n) {
   prikaziSlajdove((brojSlajda = n));
 }
@@ -11,19 +10,9 @@ function prikaziSlajdove(n) {
   let crtice = document.getElementsByClassName("crticaIndeks");
   if (brojSlajda > slajdovi.length) {
     brojSlajda = 1;
-  } else if (brojSlajda < 1) {
-    brojSlajda = slajdovi.length;
-  }  
-  if (n > slajdovi.length) {
-    brojSlajda = 1;
-  }
-  if (n < 1) {
-    brojSlajda = slajdovi.length;
   }
   for (i = 0; i < slajdovi.length; i++) {
     slajdovi[i].style.display = "none";
-  }
-  for (i = 0; i < crtice.length; i++) {
     crtice[i].className = crtice[i].className.replace(" trenutni", "");
   }
   slajdovi[brojSlajda - 1].style.opacity = 0;
@@ -57,6 +46,7 @@ function zatvoriHamburger() {
     .forEach((el) => (el.style.display = "none"));
   document.getElementById("hamburger").style.display = "block";
 }
+
 document.getElementById("kontaktForma").addEventListener("submit", (e) => {
   e.preventDefault();
   let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -68,4 +58,3 @@ document.getElementById("kontaktForma").addEventListener("submit", (e) => {
     document.getElementById("kontaktForma").reset();
   }
 });
-

@@ -56,10 +56,9 @@ a:hover {
   height: 5px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: var(--boja-pozadine-svetla);
   border-radius: 5%;
   display: inline-block;
-  transition: background-color 0.6s ease;
 }
 
 .trenutni,
@@ -71,7 +70,7 @@ a:hover {
   .hamburger {
     display: none;
   }
-
+  
   .navigacioniMeni {
     display: flex;
     flex-direction: row;
@@ -81,22 +80,40 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    padding: 1em;
+    padding: 1%;
     list-style-type: none;
     background-color: rgba(51, 51, 51, 0.8);
     color: var(--primarna-boja-teksta-svetla);
     font-size: 1.2em;
-    height: 6%;
     z-index: 1;
   }
 
   .navigacioniMeni > h1 {
-    margin-right: -25%;
+    width: 0.2%;
   }
 
   .navigacioniTekst {
     font-weight: bold;
     text-transform: uppercase;
+  }
+
+  .opadajuciMeni {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--boja-pozadine-tamna);
+  }
+  
+  .meni:hover .opadajuciMeni {
+    display: block;
+  }
+  
+  .opadajuciMeni a {
+    display: block;
+    padding: 10px;
   }
 
   .logo,
@@ -123,7 +140,7 @@ a:hover {
   height: 100vh;
   width: 100vw;
   background-color: rgba(51, 51, 51, 0.8);
-  color: #fff;
+  color: var(--primarna-boja-teksta-svetla);
 }
 
 .kontaktForma form {
@@ -146,13 +163,13 @@ a:hover {
   width: 90%;
   border: none;
   border-radius: 5px;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--boja-pozadine-svetla);
+  color: var(--primarna-boja-teksta-tamna);
 }
 
 .kontaktForma input[type="submit"] {
   background-color: var(--boja-linka);
-  color: #fff;
+  color: var(--primarna-boja-teksta-svetla);
   border: none;
   border-radius: 5px;
   padding: 0.5em;
@@ -168,7 +185,7 @@ a:hover {
 }
 
 .kontaktForma h2 {
-  text-shadow: 0 0 3px #fff;
+  text-shadow: 0 0 3px var(--primarna-boja-teksta-svetla);
 }
 
 @media screen and (max-width: 600px) {
@@ -185,6 +202,10 @@ a:hover {
     margin: 5px auto;
     height: 3px;
     background-color: var(--boja-pozadine-svetla);
+  }
+
+  #informacije{
+    display: none;
   }
 
   .navigacioniMeni {
@@ -298,9 +319,7 @@ h2 {
   color: var(--primarna-boja-teksta-svetla);
 }
 
-.proizvod > h3,p {
-  padding-bottom: 3%;
-}
+
 
 .proizvod > h3 {
   margin-top: 10px;
