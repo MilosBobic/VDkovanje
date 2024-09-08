@@ -313,13 +313,16 @@ h2 {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 0 0 10px 2px var(--boja-linka);
 }
 
 .sekcijaProizvodi > h2 {
   color: var(--primarna-boja-teksta-svetla);
 }
 
-
+.proizvod > p {
+  color: var(--boja-linka);
+}       
 
 .proizvod > h3 {
   margin-top: 10px;
