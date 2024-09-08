@@ -4,7 +4,7 @@ prikaziSlajdove(brojSlajda);
 function trenutniSlajd(n) {
   prikaziSlajdove((brojSlajda = n));
 }
-function prikaziSlajdove(n) {
+function prikaziSlajdove(n) { 
   let i;
   let slajdovi = document.getElementsByClassName("slajdovi");
   let crtice = document.getElementsByClassName("crticaIndeks");
@@ -49,7 +49,7 @@ function zatvoriHamburger() {
 
 document.getElementById("kontaktForma").addEventListener("submit", (izraz) => {
   izraz.preventDefault();
-  let redovanIzraz = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let redovanIzraz = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!redovanIzraz.test(String(document.getElementById("email").value).toLowerCase())) {
     alert("Email adresa nije ispravno napisana!");
     document.getElementById("kontaktForma").reset();
