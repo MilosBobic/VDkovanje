@@ -47,10 +47,10 @@ function zatvoriHamburger() {
   document.getElementById("hamburger").style.display = "block";
 }
 
-document.getElementById("kontaktForma").addEventListener("submit", (e) => {
-  e.preventDefault();
-  let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (!re.test(String(document.getElementById("email").value).toLowerCase())) {
+document.getElementById("kontaktForma").addEventListener("submit", (izraz) => {
+  izraz.preventDefault();
+  let redovanIzraz = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!redovanIzraz.test(String(document.getElementById("email").value).toLowerCase())) {
     alert("Email adresa nije ispravno napisana!");
     document.getElementById("kontaktForma").reset();
   } else {
